@@ -24,19 +24,25 @@ http://localhost:8080/
 
 1. Clone the repository
 ```bash
-git clone <repo-url>
+git clone https://github.com/ryanwibowo/vehicle.git 
 ```
-
-2. Build and run
+2. Check Java version
+   Make sure you have the required Java version installed (e.g., Java 17):
 ```bash
-./mvnw spring-boot:run
+java -version
 ```
-
-3. Access API via `http://localhost:8080/`
-
+3. Build and run
+```bash
+mvn clean install
+mvn spring-boot:run
+```
+   or generate JAR
+```bash
+java -jar target/your-app-name-0.0.1-SNAPSHOT.jar
+```
+4. Access API via `http://localhost:8080/`
 ---
-
-4. H2 console at `/h2-console` (JDBC URL: `jdbc:h2:mem:vehicledb`).
+5. H2 console at `/h2-console` (JDBC URL: `jdbc:h2:mem:vehicledb`).
 
 ## Testing
 
